@@ -21,14 +21,66 @@
   color: #09d3ac;
 }
 
-.game{
+.ristinollapeli{
   max-width: 350px;
+  background-image: url('./images/selma2.png');
+  background-size: cover;
 }
 
-.nappi{
+.peliruutu{
+  margin: 4px;
+  width: 100px;
+  height: 100px;
+
+  text-decoration: none;
+  vertical-align: top;
+
+}
+
+.muistipeli{
+  max-width: 650px;
+  vertical-align: center;
+ 
+}
+
+.kortti{
   margin: 0px;
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.taskulaskin{
+  max-width: 432px;
+  vertical-align: center;
+  background-image: url('./images/selma1.png');
+  background-size: cover;
+}
+
+.näyttö{
+  font-size: 40px;
+
+  padding: 10px;
+  margin: 4px;
+  width: 432px;
+  height: 50px;
+  text-decoration: none;
+  vertical-align: top;
+  text-align: right;
+
+}
+
+.näppäin{
+  font-size: 40px;
+
+  margin: 4px;
   width: 100px;
   height: 100px;
   text-decoration: none;
   vertical-align: top;
 }
+
+
+
+

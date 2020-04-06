@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-import Ruutu from "./ruutu.js";
+import Ruutu from "./Ruutu.js";
+
+//useEffect, Axios, useReducer, Context API, 
 
 var counter = 0
 
-function Appv4() {
+function App2() {
 
     const nap = {
         x: "X",
@@ -36,7 +38,9 @@ function Appv4() {
         [2, 4, 6]
     ];
 /* 
-    ["x","x","x","x","x"] =>10000
+    ["x","x","x","x","x"] =>10000   
+    ["x","x","x","x"]  =>5000
+    ["x","x"," ","x","x"] = 3000
     ["x","x"," ","x"]   => 100
     ["x","x","x"]       => 60    
     ["x","x"]           => 30
@@ -55,7 +59,7 @@ function Appv4() {
         });
 
     }
-
+    
     function ruutuPainettu(indeksi) {
         if ((!voittaakoTämäPelaaja(pelilauta, nap.o) && !voittaakoTämäPelaaja(pelilauta, nap.x))) {
             if (pelilauta[indeksi].nappula == nap.tyhja && kierrokset < 5) {
@@ -86,21 +90,26 @@ function Appv4() {
         let availableSpots = emptySquares(newBoard);
 
         if (voittaakoTämäPelaaja(newBoard, nap.x)) {
-           /*  console.log("--------x voittaa----------")
+            /* console.log("--------x voittaa----------")
 
             console.log(newBoard[0].nappula+newBoard[1].nappula+newBoard[2].nappula)
             console.log(newBoard[3].nappula+newBoard[4].nappula+newBoard[5].nappula)
-            console.log(newBoard[6].nappula+newBoard[7].nappula+newBoard[8].nappula) */
+            console.log(newBoard[6].nappula+newBoard[7].nappula+newBoard[8].nappula)  */
             return { score: -10 }
         } else if (voittaakoTämäPelaaja(newBoard, nap.o)) {
            /*  console.log("--------o voittaa----------")
 
             console.log(newBoard[0].nappula+newBoard[1].nappula+newBoard[2].nappula)
             console.log(newBoard[3].nappula+newBoard[4].nappula+newBoard[5].nappula)
-            console.log(newBoard[6].nappula+newBoard[7].nappula+newBoard[8].nappula) */
+            console.log(newBoard[6].nappula+newBoard[7].nappula+newBoard[8].nappula)  */
   
             return { score: 10 }
         } else if (availableSpots.length === 0) {
+           /*  console.log("--------tasapeli----------")
+
+            console.log(newBoard[0].nappula+newBoard[1].nappula+newBoard[2].nappula)
+            console.log(newBoard[3].nappula+newBoard[4].nappula+newBoard[5].nappula)
+            console.log(newBoard[6].nappula+newBoard[7].nappula+newBoard[8].nappula)  */
             return { score: 0 }
         }
 
@@ -145,11 +154,11 @@ function Appv4() {
             })
         }
          counter++;
-      /*   if (counter > 100) {
+         if (counter > 100) {
             if ((counter % 100) == 0) console.log(counter);
         } else 
         { console.log(counter); }
-       */ // console.log("Paras siirto:"+ moves[bestMove].paikka)
+        console.log("Paras siirto:"+ moves[bestMove].paikka)
         return moves[bestMove];
 
     }
@@ -167,4 +176,4 @@ function Appv4() {
     </div>)
 
 }
-export default Appv4
+export default App2
