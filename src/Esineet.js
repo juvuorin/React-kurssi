@@ -29,7 +29,6 @@ const Esineet = (props) => {
         setValittuPaikkakunta("Helsinki")
     }
     
-
     return (<div>
         <button onClick={paikkakuntaTamperePainettu}>Tampere</button>
         <button onClick={paikkakuntaHelsinkiPainettu}>Helsinki</button>
