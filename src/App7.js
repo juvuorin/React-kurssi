@@ -51,7 +51,7 @@ const App7 = () => {
     { kuvapuoliNäkyy: false, kuva: selmaKuva6 },
     { kuvapuoliNäkyy: false, kuva: selmaKuva7 },
     { kuvapuoliNäkyy: false, kuva: selmaKuva8 }];
-    const [kortit, setKortit] = useState([])
+    const [kortit, setKortit] = useState(shuffle(pelikortit));
     const [korttiKlikattu, setKorttiKlikattu] = useState(false)
     const [valittuKortti, setValittuKortti] = useState(-1)
     const [toinenValittuKortti, setToinenValittuKortti] = useState(-1)
@@ -59,11 +59,11 @@ const App7 = () => {
     const [pakkasekoitettu, setPakkasekoitettu] = useState(false)
 
     //Tätä funktiota kutsutaan, kun komponentti näytetään ensimmäisen kerran -> []
-    useEffect(() => {
+//    useEffect(() => {
         //let kortit = kuvat.concat(kuvat);
-        setKortit(pelikortit);
-        setPakkasekoitettu(true);
-    }, []);
+//        setKortit(pelikortit);
+//        setPakkasekoitettu(true);
+//    }, []);
 
     const piilotaKäännetytKortit = () => {
         let kopio = kortit.slice();
