@@ -1,22 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App1 from './App1';
+/* import App1 from './App1';
 import App2 from './App2';
 import App3 from './App3';
 import App4 from './App4';
-import App5 from './App5';
-import App6 from './App6';
+import App5 from './App5';*/
 //import App6 from './App6';
+import App7 from './App7';
 import * as serviceWorker from './serviceWorker';
 import { StateProvider } from './store.js';
  
-const app = (
+//Tämä harjoitustyötä 7 varten!
+/*const app = (
     <StateProvider>
       <App6 />
     </StateProvider>
   ); 
-//ReactDOM.render(<App5/>, document.getElementById('root'));
+ */
+const app = (
+      <App7 />
+  );
+
+  //ReactDOM.render(<App5/>, document.getElementById('root'));
 ReactDOM.render(app, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

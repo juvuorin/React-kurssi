@@ -7,15 +7,17 @@ import Esineet from './Esineet'
 
 //Axios, useEffect
 const App4 = () => {
+  
     const [data,setData] = useState(["Dataa haetaan"])
     const [kategoriaValittu,setKategoriaValittu] = useState(false)
     const [kategoriaId,setKategoriaId] = useState(0)
-   
+  
     useEffect(()=>{
       async function haeDataa(){
         let result = await axios('https://api.huuto.net/1.1/categories');
         console.log(JSON.parse(result.request.response).categories);
         setData(JSON.parse(result.request.response).categories);
+        
       }
       
       haeDataa();

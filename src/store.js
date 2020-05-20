@@ -32,7 +32,6 @@ const initialState = {
     tila: Pelitila.NIMET_PUUTTEELLISET, pelaajat: ["",""], pelivuoroX: true, voittaja: -1, peliKäynnissä: false
 }
 
-
 const voittaakoTämäPelaaja = (lauta, pelaaja) => {
 
     return voittorivit.some(x => {
