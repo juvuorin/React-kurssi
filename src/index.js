@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-/* import App1 from './App1';
+import App1 from './App1';
 import App2 from './App2';
 import App3 from './App3';
 import App4 from './App4';
-import App5 from './App5';*/
-//import App6 from './App6';
+import App5 from './App5';
+import App6 from './App6';
 import App7 from './App7';
+import App8 from './App8';
+import App9 from './App9';
+import App10 from './App10';
+import App11 from './App11';
+import App12 from './App12';
+
 import * as serviceWorker from './serviceWorker';
 import { StateProvider } from './store.js';
  
@@ -19,7 +25,7 @@ import { StateProvider } from './store.js';
   ); 
  */
 const app = (
-      <App7 />
+      <App12 />
   );
 
   //ReactDOM.render(<App5/>, document.getElementById('root'));
