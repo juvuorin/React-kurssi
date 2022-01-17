@@ -18,16 +18,16 @@ import * as serviceWorker from './serviceWorker';
 import { StateProvider } from './store.js';
  
 //Tämä harjoitustyötä 7 varten!
-/*const app = (
+const app = (
     <StateProvider>
       <App6 />
     </StateProvider>
   ); 
- */
-const app = (
-      <App12 />
-  );
 
+/* const app = (
+      <App6 />
+  );
+ */
   //ReactDOM.render(<App5/>, document.getElementById('root'));
 ReactDOM.render(app, document.getElementById('root'));
 
